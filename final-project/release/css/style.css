@@ -1,0 +1,323 @@
+/*
+Stylesheet for final project, MAT 21a, DCI Berlin Waleed
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+*/
+
+
+/*
+
+Reset
+*/
+h1{
+      color: saddlebrown;
+        text-align: center
+}
+/*
+.img-image{
+    margin: 20px;
+    border:20px solid black;
+}
+*/
+.column {
+  float: left;
+  width: 30%;
+  padding: 18px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    margin-right: 1%;
+  content: "";
+  clear: both;
+  display: table;
+}
+/*
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+*/
+.home-img{
+    height: 250px;
+    width: 98%;
+    object-fit: cover;
+}
+
+nav ul{
+    list-style-type: none;
+}
+/*
+Layout
+
+*/
+
+.firstword {
+    background-color: green;
+}
+
+/*
+h1,h2,h3,h4,p,
+nav ul {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+*/
+
+h3 {
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    margin-top: 2em;
+}
+
+
+
+.m{
+    margin-left: 9%;
+}
+
+/*
+div { 
+    width: 300px;
+    
+    margin: 0 auto;
+}
+*/
+span{
+    margin: 10px
+}
+/*Navigation*/
+nav.main-navigation ul li{
+    
+    text-transform: uppercase;
+/*      display: inline-block;*/
+}
+
+nav.main-navication{
+      text-align: center;
+}
+nav.main-navigation ul li{
+  
+           display: inline-block;
+
+
+}
+
+
+/*
+nav.main-navigation ul li{
+    display: inline-block;
+}
+*/
+
+nav.main-navigation ul li a {
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: saddlebrown;
+    background-color:greenyellow; 
+    font-weight: 600;
+}
+
+nav.main-navigation ul li a:hover {
+    color: yellow;
+    font-size: 25px;
+}
+.flex-item{
+    
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(23, 162, 23, 0.67);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: saddlebrown;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color:inherit ;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellowgreen;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: saddlebrown;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(23, 162, 23, 0.67);
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color:saddlebrown;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+
+
+/*Colors and Style*/
+
+body {
+    background-color:white;
+}
+
+header {
+    background-color :rgb(23, 162, 23, 0.67);
+    padding:0.0em
+}
+footer { background-color :rgb(23, 162, 23, 0.67);
+    padding-top: 0.5px;
+   text-align: center;
+    height: 15vh;
+}
+.footer-span:hover{
+    color: yellow;
+    font-size: 25px;
+}
+.footer-span{ padding: 2px 8px 2px 2px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: saddlebrown;
+    background-color:greenyellow; 
+    font-weight: 600;
+
+}
+
+/*Typography*/
+body { 
+    font-family: 'Dancing Script', cursive;
+}
+.h2-style{
+    text-align: left;
+}
+p{
+    
+    line-height: 1.5em;
+
+}
+.div-m{
+    margin-left: 1%;
+    text-align: left;
+}
+/*responssive Design*/
+
+/*conatct*/
+/* Style inputs with type="text", select elements and textareas */
+
+
+/* Style the submit button with a specific background color etc */
+input, select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    background-image: url('https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiprdinjJXkAhWD_qQKHVIhBeAQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fflower%2F&psig=AOvVaw3Ku8sfrKfO5zV8GCf29qil&ust=1566515816064874')
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
